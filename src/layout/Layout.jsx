@@ -21,7 +21,7 @@ const Layout = () => {
         <Outlet />
       </main>
       <footer>
-        <p>© 2023 Your Website</p>
+        <p>footer</p>
       </footer>
     </div>
   );
