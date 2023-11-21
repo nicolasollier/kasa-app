@@ -6,13 +6,15 @@ import styles from "./Layout.module.sass";
 
 const Layout = () => {
   return (
-    <div className={styles.layout}>
-      <Header />
-      <main>
-        <Outlet />
-      </main>
+    <>
+      <div className={styles.layout}>
+        <Header />
+        <main>
+          <Outlet />
+        </main>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

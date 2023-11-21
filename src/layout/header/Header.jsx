@@ -1,18 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LogoKasa from "../../assets/logos/LogoKasa";
 import styles from "./Header.module.sass";
 
 const Header = () => {
   return (
     <nav className={styles.nav}>
-      <LogoKasa className={styles.nav__logo} fillColor="#FF6060"/>
+      <LogoKasa className={styles.nav__logo} fillColor="#FF6060" />
       <ul>
         <li>
-          <Link to="/">Acceuil</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? `${styles.links} ${styles.active}` : styles.links
+            }
+          >
+            ACCEUIL
+          </NavLink>
         </li>
         <li>
-          <Link to="/about">A propos</Link>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? `${styles.links} ${styles.active}` : styles.links
+            }
+          >
+            A PROPOS
+          </NavLink>
         </li>
       </ul>
     </nav>

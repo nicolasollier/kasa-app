@@ -1,10 +1,31 @@
 .nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+
   ul
+    display: flex
     list-style: none
-  a
-    color: #FF6060
-    text-decoration: inherit
-  
-  &___logo
+
+  li:last-child
+    margin-left: 57px
+    @media screen and (max-width: 768px) 
+      margin-left: 26px
+
+  &__logo
     width: 210px
     height: auto
+    @media screen and (max-width: 768px) 
+      width: 145px
+
+.links
+  font-size: 24px
+  font-weight: 500
+  color: #FF6060
+  text-decoration: none
+
+  @media screen and (max-width: 768px) 
+    font-size: 12px
+
+.active
+  text-decoration: underline
