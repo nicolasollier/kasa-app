@@ -15,7 +15,7 @@ const Header = () => {
               isActive ? `${styles.links} ${styles.active}` : styles.links
             }
           >
-            ACCEUIL
+            Acceuil
           </NavLink>
         </li>
         <li>
@@ -25,7 +25,7 @@ const Header = () => {
               isActive ? `${styles.links} ${styles.active}` : styles.links
             }
           >
-            A PROPOS
+            A propos
           </NavLink>
         </li>
       </ul>
