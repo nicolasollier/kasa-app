@@ -8,7 +8,7 @@ import Layout from "../src/layout/Layout.jsx";
 import Home from "../src/views/Home.jsx";
 import Accomodations from "../src/views/Accomodations.jsx";
 import About from "../src/views/About.jsx";
-import NotFound from "../src/views/NotFound.jsx";
+import NotFound from "../src/views/NotFound/NotFound.jsx";
 
 //styles
 import "./index.css";
