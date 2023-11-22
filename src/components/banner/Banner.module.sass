@@ -1,0 +1,42 @@
+.banner
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 223px
+  border-radius: 25px
+  margin-top: 50px
+  background: url('../../assets/img/background-coast.png') no-repeat center / cover
+  @media screen and (max-width: 768px) 
+    height: 111px
+    border-radius: 10px
+    align-items: flex-start
+    margin-top: 27px
+
+  &::before
+    z-index: 1
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.2)
+    border-radius: inherit
+
+  h1
+    z-index: 2
+    color: #FFF
+    font-family: Montserrat
+    font-size: 48px 
+    font-weight: 500
+    @media screen and (max-width: 768px) 
+      font-size: 24px
+      margin-left: 16px
+
+.linebreak
+  display: none
+  @media screen and (max-width: 768px) 
+    display: block
