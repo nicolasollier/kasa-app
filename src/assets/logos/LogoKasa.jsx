@@ -1,7 +1,9 @@
 const LogoKasa = ({ className, fillColor = "white" }) => {
   return (
     <svg
+      onClick={() => window.location.replace("/")}
       className={className}
+      style={{ cursor: "pointer" }}
       viewBox="0 0 122 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
