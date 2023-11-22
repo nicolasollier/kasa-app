@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 //layouts and views
 import Layout from "../src/layout/Layout.jsx";
-import Home from "../src/views/Home.jsx";
+import Home from "../src/views/Home/Home.jsx";
 import Accomodations from "../src/views/Accomodations.jsx";
 import About from "../src/views/About.jsx";
 import NotFound from "../src/views/NotFound/NotFound.jsx";
