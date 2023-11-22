@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Card.module.sass';
 
-const Card = () => {
+const Card = ({description, imgUrl}) => {
   return ( 
-    <div className={styles.card}>
-      <p className={styles.card__description}>Titre de la <br /> location</p>
+    <div className={styles.card} style={{ backgroundImage: `url(${imgUrl})` }}>
+      <p className={styles.card__description}>{description}</p>
     </div>
    );
 }

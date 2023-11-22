@@ -8,10 +8,14 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <Banner hasText={true} />
-      
+
       <div className={styles.home__cardList}>
-        {data.map((item, index) => (
-          <Card key={index} />
+        {data.map((item) => (
+          <Card
+            key={"card_" + item.id}
+            description={item.title}
+            imgUrl={item.cover}
+          />
         ))}
       </div>
     </div>
