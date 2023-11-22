@@ -1,0 +1,57 @@
+.dropdown
+  position: relative
+  display: flex
+  flex-direction: column
+  max-width: 1023px
+  margin: 38px auto
+  height: auto
+  color: #FFF
+  font-size: 24px
+  font-weight: 500
+  @media screen and (max-width: 768px)
+    font-size: 13px
+    margin: 20px auto 0
+
+
+  &__header
+    z-index: 1
+    display: flex
+    height: 52px
+    cursor: pointer
+    border-radius: 5px
+    background-color: #FF6060
+    justify-content: space-between
+    align-items: center
+    @media screen and (max-width: 768px)
+      height: 30px
+    p
+      margin: 10px 15px
+    p::selection 
+      background: #FF6060
+    &__icon 
+      width: 32px
+      height: 32px
+      margin: 10px 20px
+      transition: transform 0.2s ease-in-out
+      @media screen and (max-width: 768px)
+        margin: 0 10px
+
+
+  &__content
+    z-index: 0
+    position: relative
+    top: -4px
+    max-width: 1023px
+    padding: 24px 20px 20px
+    box-sizing: border-box
+    margin: 0 auto
+    font-size: 18px
+    font-weight: 400
+    border-radius: 0 0 5px
+    color: #FF6060
+    background-color: #F6F6F6
+    @media screen and (max-width: 768px)
+      font-size: 13px
+   
+.open
+  transform: rotate(180deg)
