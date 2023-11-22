@@ -7,7 +7,7 @@ import styles from "./Home.module.sass";
 const Home = () => {
   return (
     <div className={styles.home}>
-      <Banner hasText={true} />
+      <Banner hasText={true} img={'background-coast.png'}/>
 
       <div className={styles.home__cardList}>
         {data.map((item) => (

@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "../src/layout/Layout.jsx";
 import Home from "../src/views/Home/Home.jsx";
 import Accomodations from "../src/views/Accomodations.jsx";
-import About from "../src/views/About.jsx";
+import About from "../src/views/About/About.jsx";
 import NotFound from "../src/views/NotFound/NotFound.jsx";
 
 //styles
