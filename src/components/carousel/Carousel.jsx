@@ -23,6 +23,9 @@ const Carousel = ({ pictures }) => {
       <button className={styles.carousel__btn} onClick={goToPrev}>
         <ArrowNext className={styles.arrow} />
       </button>
+      <div className={styles.carousel__counter}>
+        {currentIndex + 1}/{pictures.length}
+      </div>
       <button className={styles.carousel__btn} onClick={goToNext}>
         <ArrowNext className={styles.arrow} />
       </button>
