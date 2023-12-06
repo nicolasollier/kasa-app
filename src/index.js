@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 //layouts and views
 import Layout from "../src/layout/Layout.jsx";
 import Home from "../src/views/Home/Home.jsx";
-import Accomodations from "../src/views/Accomodations.jsx";
+import Accomodations from "./views/Accomodations/Accomodations.jsx";
 import About from "../src/views/About/About.jsx";
 import NotFound from "../src/views/NotFound/NotFound.jsx";
 
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <Home />, index: true },
-      { path: "accomodations", element: <Accomodations /> },
+      { path: "accomodations/:id", element: <Accomodations /> },
       { path: "about", element: <About /> },
       { path: "*", element: <NotFound /> },
     ],

@@ -12,6 +12,7 @@ const Home = () => {
       <div className={styles.home__cardList}>
         {data.map((item) => (
           <Card
+            id={item.id}
             key={"card_" + item.id}
             description={item.title}
             imgUrl={item.cover}
