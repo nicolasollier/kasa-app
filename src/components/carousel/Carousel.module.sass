@@ -20,14 +20,25 @@
     position: absolute
     top: 50%
     transform: translateY(-50%)
-    background: #fff
+    background: transparent
     border: none
-    padding: 10px 20px
+    padding: 0 24px
     cursor: pointer
     z-index: 10
 
     &:first-of-type 
       left: 10px
+      transform: translateY(-50%) rotate(180deg)
     &:last-of-type 
       right: 10px
+
+    @media screen and (max-width: 768px)
+      padding: 0
     
+    .arrow 
+      width: 46px
+      height: 80px
+
+      @media screen and (max-width: 768px)
+        width: 24px
+        height: 24px

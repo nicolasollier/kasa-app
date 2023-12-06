@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ArrowNext from "../icons/arrow_next";
 import styles from "./Carousel.module.sass";
 
 const Carousel = ({ pictures }) => {
@@ -20,10 +21,10 @@ const Carousel = ({ pictures }) => {
     <div className={styles.carousel__wrapper}>
       <img src={pictures[currentIndex]} alt="carousel" />
       <button className={styles.carousel__btn} onClick={goToPrev}>
-        Previous
+        <ArrowNext className={styles.arrow} />
       </button>
       <button className={styles.carousel__btn} onClick={goToNext}>
-        Next
+        <ArrowNext className={styles.arrow} />
       </button>
     </div>
   );
