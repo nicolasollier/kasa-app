@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Dropdown.module.sass";
 import ArrowIcon from "../icons/arrow_back";
 
-const Dropdown = ({ principle }) => {
+const Dropdown = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -13,7 +13,7 @@ const Dropdown = ({ principle }) => {
     <>
       <div className={styles.dropdown}>
         <div className={styles.dropdown__header} onClick={toggleDropdown}>
-          <p value={principle.name}>{principle.name}</p>
+          <h3 className={styles.dropdown__title}>{title}</h3>
           <div
             className={`${styles.dropdown__header__icon} ${
               isOpen ? styles.open : ""
@@ -23,7 +23,7 @@ const Dropdown = ({ principle }) => {
           </div>
         </div>
         {isOpen && (
-          <div className={styles.dropdown__content}>{principle.content}</div>
+          <div className={styles.dropdown__content}>{content}</div>
         )}
       </div>
     </>

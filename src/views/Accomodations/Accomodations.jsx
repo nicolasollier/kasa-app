@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import data from "../../utils/data.json";
 import Avatar from "../../components/avatar/Avatar";
-import Carousel from "../../components/carousel/Carousel";
 import Badge from "../../components/badge/Badge";
+import Carousel from "../../components/carousel/Carousel";
+import Dropdown from "../../components/dropdown/Dropdown";
 import Star from "../../components/icons/star";
 import styles from "./Accomodations.module.sass";
 
@@ -52,6 +53,10 @@ const Accomodations = () => {
             })}
           </div>
         </div>
+      </div>
+
+      <div className={styles.description}>
+        <Dropdown title='Description' content={accommodation.description} />
       </div>
     </div>
   );

@@ -7,9 +7,8 @@ const About = () => {
   return (
     <div>
       <Banner img={"background-mountain.png"} />
-
       {principles.map((principle) => (
-        <Dropdown key={'dropdown_' + generateUuid()} principle={principle} />
+        <Dropdown key={'dropdown_' + generateUuid()} title={principle.name} content={principle.content} />
       ))}
     </div>
   );
