@@ -7,7 +7,7 @@ const NotFound = () => {
       <h1>404</h1>
       <p>Oups! La page que <br className={styles.linebreak} /> vous demandez n'existe pas.</p>
 
-      <NavLink>Retourner sur la page d’accueil</NavLink>
+      <NavLink to="/">Retourner sur la page d’accueil</NavLink>
     </div>
   );
 };

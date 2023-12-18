@@ -7,6 +7,7 @@ import Carousel from "../../components/carousel/Carousel";
 import Dropdown from "../../components/dropdown/Dropdown";
 import Star from "../../components/icons/star";
 import styles from "./Accomodations.module.sass";
+import NotFound from "../NotFound/NotFound";
 
 const Accomodations = () => {
   const { id } = useParams();
@@ -19,7 +20,7 @@ const Accomodations = () => {
   }, [id]);
 
   if (!accommodation) {
-    return <div>Chargement...</div>;
+    return <NotFound />;
   }
 
   return (
