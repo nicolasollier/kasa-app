@@ -57,6 +57,7 @@ const Accomodations = () => {
 
       <div className={styles.description}>
         <Dropdown title='Description' content={accommodation.description} />
+        <Dropdown title='Equipements' content={accommodation.equipments} isContentList={true} />
       </div>
     </div>
   );
